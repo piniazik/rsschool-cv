@@ -7,7 +7,7 @@
 **Location:** 
 [![N|Solid](https://img.icons8.com/officexs/2x/worldwide-location.png)](https://www.google.com/maps/place/%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8691334,27.6481929,17z/data=!4m5!3m4!1s0x46dbce2e4567f187:0x610d7794a7fbfb66!8m2!3d53.8696806!4d27.6460579)
 &nbsp;&nbsp;&nbsp;**E-mail:** 
-[![N|Solid](https://img.icons8.com/officexs/2x/mail-contact.png)](brutto33@tut.by)
+<a href="mailto:brutto33@tut.by" target="_blank">[![N|Solid](https://img.icons8.com/officexs/2x/mail-contact.png)]</a>
 &nbsp;&nbsp;&nbsp;**Linkedin:** 
 [![N|Solid](https://img.icons8.com/officexs/2x/linkedin.png)](https://www.linkedin.com/in/aliaksei-piniazik-13599218a/)
 &nbsp;&nbsp;&nbsp;**Github:** 
@@ -135,9 +135,9 @@ The study of HTML5, CSS3, Java Script, PHP, Photoshop and other.
 
 September 2015- june 2021
 
-Economics and management at an industrial enterprise
-
 **Location:** Minsk
+
+Economics and management at an industrial enterprise
 
 Specialty "Manager-economist" 
 
@@ -173,7 +173,7 @@ Training course: "Website Development Using HTML5, CSS3 and Java Script"
 
 Learning HTML5 tags, basics of site layout, learning CSS3, Bootstrap 4, SASS. Learning the basics of Java Script.
 
-Date of issue: apr. 2019 Open file
+Date of issue: apr. 2019 
 
 ### IT ACADEMY
 
