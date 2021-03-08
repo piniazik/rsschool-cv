@@ -121,9 +121,9 @@ Work with Wordpress, with the WooCommrce plugin. Adding products, adjusting phot
 
 ## EDUCATION
 
-March 2021 - October 2022
-
 ### Retraining Institute of Business BSU
+
+March 2021 - October 2022
 
 **Location:** Minsk
 
@@ -131,9 +131,9 @@ Specialty "Web designer programmer"
 
 The study of HTML5, CSS3, Java Script, PHP, Photoshop and other.
 
-September 2015- june 2021
-
 ### Minsk Innovation Uiversity
+
+September 2015- june 2021
 
 Economics and management at an industrial enterprise
 
