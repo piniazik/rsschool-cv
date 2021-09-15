@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://piniazik.github.io/rsschool-cv/
