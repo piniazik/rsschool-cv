@@ -1,0 +1,723 @@
+/*roboto fonts*/
+@font-face {
+		font-family: "Roboto-Black";
+		src: url("../fonts/Roboto-Black.woff");
+}
+@font-face {
+		font-family: "Roboto-Bold";
+		src: url("../fonts/Roboto-Bold.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+		font-family: "Roboto-Regular";
+		src: url("../fonts/Roboto-Regular.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+		font-family: "Roboto-Light";
+		src: url("../fonts/Roboto-Light.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+		font-family: "Roboto-Medium";
+		src: url("../fonts/Roboto-Medium.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+/*poppins fonts*/
+@font-face {
+		font-family: "Poppins-Regular";
+		src: url("../fonts/Poppins-Regular.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+		font-family: "Poppins-Bold";
+		src: url("../fonts/Poppins-Bold.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+		font-family: "Poppins-Medium";
+		src: url("../fonts/Poppins-Medium.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+		font-family: "Poppins-SemiBold";
+		src: url("../fonts/Poppins-SemiBold.woff");
+		font-weight: normal;
+		font-style: normal;
+}
+$white: #fff;
+$black: #242424;
+$gray:	#666666;
+$bg-img: #437A73;
+$bg: #C0D8DE;
+$item: #4F4F4F;
+$work: #999999;
+/*fonts*/
+$rob-bl: "Roboto-Black";
+$rob-bo: "Roboto-Bold";
+$rob-re: "Roboto-Regular";
+$rob-li: "Roboto-Light";
+$rob-me: "Roboto-Medium";
+$pop-re: "Poppins-Regular";
+$pop-bo: "Poppins-Bold";
+$pop-med: "Poppins-Medium";
+$pop-sem: "Poppins-SemiBold";
+/*@media*/
+/*phones*/
+$small-w: 320px;
+$small-h: 678px;
+$large-w: 375px;
+$large-h: 667px;
+$bigger-min: 414px;
+$bigger-max: 736px;
+/*ipad*/
+$ipad-min-w: 768px;
+$ipad-max-w: 1024px;
+$ipad-p-min-w: 1024px; 
+$ipad-p-max-h: 1366px; 
+/*high resolution*/
+$display-1080-min-w: 1920px;
+@mixin heading-personal-data {
+		font-family: $pop-bo;
+		font-size: 47px;
+		line-height: 70px;
+		text-align: center;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: $black;
+}
+@mixin subheading-personal-data {
+		font-family: $rob-me;
+		font-size: 30px;
+		line-height: 45px;
+		letter-spacing: 0.01em;
+		color: $black;
+}
+
+@mixin heading-about-me {
+		font-family: $pop-bo;
+		font-size: 40px;
+		line-height: 70px;
+		text-align: center;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $black;
+}
+@mixin subheading-about-me  {
+		font-family: $pop-bo;
+		font-size: 30px;
+		line-height: 49px;
+		letter-spacing: 0.03em;
+		color: $black;
+	}
+@mixin personal-data-surname {
+		font-family: $rob-li;
+		font-size: 60px;
+		line-height: 94px;
+		letter-spacing: 0.005em;
+		color: $gray;
+}
+@mixin personal-data-name {
+		font-family: $rob-bl;
+		font-size: 60px;
+		line-height: 94px;
+		letter-spacing: 0.005em;
+		color: $black;
+		margin: 0;
+}
+@mixin personal-data-position {
+		font-family: $rob-re;
+		font-size: 30px;
+		line-height: 41px;
+		letter-spacing: 0.005em;
+		color: $gray;
+}
+@mixin description {
+		font-family: $rob-re;
+		font-size: 30px;
+		line-height: 170%;
+		text-align: justify;
+		letter-spacing: 0.03em;
+		color: $black;
+		text-indent: 1.5rem;
+}
+@mixin personal-item {
+		font-family: $pop-med;
+		font-size: 30px;
+		line-height: 41px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: $item;
+}
+@mixin professional-item {
+		font-family: $pop-med;
+		font-size: 25px;
+		line-height: 45px;
+		letter-spacing: 0.01em;
+		color: $black;
+}
+@mixin about-subtitle {
+		font-family: $pop-sem;
+		font-size: 25px;
+		line-height: 45px;
+		letter-spacing: 0.03em;
+		color: $work;
+}
+@mixin link-nav {
+		font-family: $rob-re;
+		font-size: 25px;
+		line-height: 35px;
+		letter-spacing: 0.01em;
+		color: $black;
+}
+/*site loading*/
+.wrap-my-loader {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: $bg;
+		z-index: 51;
+		-webkit-transition: 1s all;
+		transition: 1s all;
+		opacity: 1;
+		visibility: visible;
+}
+.my-loader {
+		position: absolute;
+		left: 49%;
+		top: 49%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 76px;
+		height: 76px;
+		border: 10px solid $bg-img;
+		border-top-color: $white;
+		border-radius: 50%;
+		-webkit-animation: 3s myAnim linear infinite;
+		animation: 3s myAnim linear infinite;
+}
+.cansel {
+	opacity: 0;
+	visibility: hidden;
+}
+@-webkit-keyframes myAnim {
+		from {
+		-webkit-transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%, -50%) rotate(0deg);
+		}
+		to {
+		-webkit-transform: translate(-50%, -50%) rotate(360deg);
+		transform: translate(-50%, -50%) rotate(360deg);
+		}
+	}
+@keyframes myAnim {
+	from {
+		-webkit-transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		-webkit-transform: translate(-50%, -50%) rotate(360deg);
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+/*site loading cansel*/
+.main {
+		background-image: url(../img/Union.png);
+		background-repeat: no-repeat;
+		background-position: 40rem 0rem;
+}
+/*personal data*/
+.personal-data {
+		background-color: $bg;
+		text-align: center;
+		&__images {
+		width: 100%;
+		max-width: calc(100% - 15rem);
+		height: auto;
+		border-radius: 50%;
+		margin-top: 5rem;
+		background-color: $bg-img;
+		}
+		&__name {
+		@include personal-data-name;
+		}
+		&__surname {
+		@include personal-data-surname;
+		}
+		&__position {
+		@include personal-data-position;
+		}
+}
+/*profile*/
+.profile {
+
+		&__heading {
+		@include heading-personal-data;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		}
+
+		&__description {
+		@include description;
+		}
+}
+/*contact*/
+.contact-me {
+
+		&__heading {
+		@include heading-personal-data;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		}
+
+		&__item {
+		@include personal-item ;
+		}
+
+		&__subheading {
+		@include subheading-personal-data;
+		}
+}
+.fa-mobile {
+		color: $black;
+		transition: 0.5s;
+}
+.fa-mobile:hover {
+		transform: scale(1.2);
+}
+.fa-envelope {
+		color: $black;
+		transition: 0.5s;
+}
+.fa-envelope:hover {
+		transform: scale(1.2);
+}
+.fa-map-marker {
+		color: $black;
+		transition: 0.5s;
+}
+.fa-map-marker:hover {
+		transform: scale(1.2);
+}
+/*personal skills*/
+.personal-skills {
+
+		&__heading {
+		@include heading-personal-data;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		}
+
+		&__subheading {
+		@include subheading-personal-data;
+		padding-right: 4rem;
+		}
+
+}
+.about-me {
+		margin-top: 1rem;
+}
+.navigation-nav {
+
+		&__list {
+		display: flex;
+		justify-content: center;
+		}
+
+		&__item {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		}
+		&__link {
+		@include link-nav;
+		background-size:  100% 15%;
+		background-repeat: repeat-x;
+		background-position: left 0% bottom 10%;
+		transition: 0.5s;
+
+		}
+		&__link:hover {
+		background-image: repeating-linear-gradient(0deg, rgb(42, 166, 224) 0px, rgb(42, 166, 224) 4px,transparent 4px, transparent 8px,rgb(48, 200, 159) 8px, rgb(48, 200, 159) 12px,transparent 12px, transparent 16px,rgb(53, 234, 94) 16px, rgb(53, 234, 94) 20px,transparent 20px, transparent 24px),linear-gradient(90deg, #FFF,#FFF);
+  		background-size: 100% 24%;
+  		background-position: 100% 98%;
+		}
+}
+.fa-linkedin {
+		padding-right: 1rem;
+		color: $black;
+}
+.fa-github-alt {
+		padding-right: 1rem;
+		color: $black;
+}
+.fa-file-text {
+		padding-right: 1rem;
+		color: $black;
+}
+
+/*education*/
+.education {
+		text-align: center;
+		padding-top: 4rem;
+}
+.education-heading {
+		@include heading-about-me;
+}
+.education-subheading {
+		@include subheading-about-me;
+		padding-top: 2rem;
+}
+.education-subtitle {
+		@include about-subtitle;
+}
+.education-description {
+		@include description;
+		padding-top: 2rem;
+}
+/*professional skill*/
+.professional-skill {
+
+		&__heading {
+		@include heading-about-me;
+		margin-top: 2rem;
+		}
+
+		&__list {
+		padding-top: 2rem;
+		text-align: center;
+		}
+
+		&__item {
+		@include professional-item;
+		margin-right: 1rem;
+		}
+}
+/*sample code*/
+.sample-code {
+		margin-top: 2rem;
+	&__heading {
+		@include heading-about-me;
+		margin-bottom: 2rem;
+	}
+}
+/*work experiece*/
+.work-experiece {
+		text-align: center;
+		&__heading {
+		@include heading-about-me;
+		margin-top: 2rem;
+		}
+
+		&__subheading {
+		@include subheading-about-me;
+		padding-top: 2rem;
+		}
+
+		&__subtitle {
+		@include about-subtitle;
+		}
+
+		&__description {
+		@include description;
+		padding-top: 2rem;
+		}
+}
+/*courses*/
+.courses {
+
+		&__heading {
+		@include heading-about-me;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		}
+
+		&__subheading {
+		@include subheading-about-me;
+		}
+
+		&__subtitle {
+		@include about-subtitle;
+		}
+
+		&__description {
+		@include description;
+		}
+
+		&__link {
+		@include about-subtitle;
+		background-size:  100% 15%;
+		background-repeat: repeat-x;
+		background-position: left 0% bottom 10%;
+		transition: 0.5s;
+		}
+		&__link:hover {
+		background-image: repeating-linear-gradient(0deg, rgb(42, 166, 224) 0px, rgb(42, 166, 224) 4px,transparent 4px, transparent 8px,rgb(48, 200, 159) 8px, rgb(48, 200, 159) 12px,transparent 12px, transparent 16px,rgb(53, 234, 94) 16px, rgb(53, 234, 94) 20px,transparent 20px, transparent 24px),linear-gradient(90deg, #FFF,#FFF);
+  		background-size: 100% 24%;
+  		background-position: 100% 98%;
+		}
+}
+/*portfolio*/
+.portfolio {
+
+		&__heading {
+		@include heading-about-me;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		}
+
+		&__images {
+		width: 100%;
+		height: auto;
+		border: .8rem solid $bg;
+		}
+
+		&__link {
+		@include about-subtitle;
+		background-size:  100% 15%;
+		background-repeat: repeat-x;
+		background-position: left 0% bottom 10%;
+		transition: 0.5s;
+		}
+		&__link:hover {
+		background-image: repeating-linear-gradient(0deg, rgb(42, 166, 224) 0px, rgb(42, 166, 224) 4px,transparent 4px, transparent 8px,rgb(48, 200, 159) 8px, rgb(48, 200, 159) 12px,transparent 12px, transparent 16px,rgb(53, 234, 94) 16px, rgb(53, 234, 94) 20px,transparent 20px, transparent 24px),linear-gradient(90deg, #FFF,#FFF);
+  		background-size: 100% 24%;
+  		background-position: 100% 98%;
+		}
+}
+/* begin back to top button  */
+.footer-btn_up {
+		width: 400px;
+		margin: auto;
+		text-align: justify;
+}
+.back_to_top {
+		position: fixed;
+		bottom: 116px;
+		right: 20px;
+		z-index: 9999;
+		text-align: center;
+		line-height: 30px;
+		border-radius: 2px;
+		display: none;
+		border-radius: 2px;
+		cursor: pointer;
+		height: 5.5rem;
+		width: 5rem;
+		padding: 0.6rem 0;
+		border-radius: 50%;
+		-webkit-transition: 1s all;
+		transition: 1s all;
+		background-image: url(..//img/rocket.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: 0.5s;
+}
+.back_to_top:hover {
+		transform: scale(1.2);
+}
+.back_to_top-show {
+		display: block;
+}
+/*--@media--*/
+/* small phones*/
+@media only screen and (min-width : $small-w) and (max-width : $small-h) and (orientation : portrait)  {
+	.profile__heading {
+	  font-size: 35px;
+	}
+	.contact-me__heading {
+	  font-size: 35px;
+	}
+	.personal-skills__heading {
+	  font-size: 35px;
+	}
+	.personal-data__images {
+	  max-width: calc(100% - 8rem);
+	}
+	.personal-data__surname {
+	  font-size: 35px;
+	}
+	.personal-data__name {
+	  font-size: 35px;
+	}
+	.profile__description {
+	  font-size: 25px;
+	}
+	.navigation-nav__list {
+	  flex-wrap: wrap;
+	}
+	.navigation-nav__item {
+	  margin-top: 1rem;
+	}
+	.personal-skills__subheading {
+	  padding-right: 2rem;
+	  font-size: 23px;
+	}
+	.personal-skills__images {
+	  width: 30%;
+	}
+	.education-description {
+	  font-size: 25px;
+	}
+	.professional-skill__heading {
+	  font-size: 35px;
+	}
+	.professional-skill__images {
+	  width: 100%;
+	}
+	.sample-code__heading {
+	  font-size: 35px;
+	}
+	.work-experiece__heading {
+	  font-size: 35px;
+	}
+	.work-experiece__description {
+	  font-size: 25px;
+	}
+	.courses__description {
+	  font-size: 25px;
+	}
+	.portfolio__heading {
+	  font-size: 35px;
+	}
+	.courses__heading {
+	  font-size: 35px;
+	}
+  }
+  
+  /* larger phones */
+  @media only screen and (min-width: $large-w) and (max-height: $large-h) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+	.personal-data__images {
+	  max-width: calc(100% - 8rem);
+	}
+	.personal-data__name {
+	  font-size: 35px;
+	}
+	.personal-data__surname {
+	  font-size: 35px;
+	}
+	.personal-skills__subheading {
+	  font-size: 16px;
+	  padding-right: 1rem;
+	}
+  
+	.professional-skill__heading {
+	 font-size: 35px;
+	}
+  
+	.navigation-nav__list {
+	  flex-wrap: wrap;
+	}
+  
+	.navigation-nav__item {
+	  margin-top: 1rem;
+	}
+  
+	.professional-skill__images {
+	  width: 40%;
+	  padding-left: 1rem;
+	  text-align: center;
+	}
+  
+	.personal-skills__heading {
+	  font-size: 35px;
+	}
+  
+	.education-description {
+	  text-align: center;
+	  font-size: 25px;
+	}
+  
+	.education-heading {
+	  font-size: 35px;
+	}
+  
+	.profile__heading {
+	  font-size: 35px;
+	}
+  
+	.contact-me__heading {
+	  font-size: 35px;
+	}
+  
+	.personal-skills__heading {
+	  font-size: 35px;
+	}
+  
+	.work-experiece__heading {
+	  font-size: 35px;
+	}
+  
+	.work-experiece__description {
+	  font-size: 25px;
+	}
+  
+	.courses__heading {
+	  font-size: 35px;
+	}
+  
+	.courses__description {
+	  font-size: 25px;
+	}
+  
+	.portfolio__heading {
+	  font-size: 35px;
+	}
+  
+	.profile__description {
+	  font-size: 23px;
+	}
+  }
+  
+  @media only screen and (min-width : $bigger-min) and (max-width : $bigger-max) and (orientation : portrait){
+	.personal-data__images {
+	  max-width: calc(100% - 10rem);
+	}
+	.personal-skills__subheading {
+	  font-size: 21px;
+	}
+  }
+  /* iPads Pro */
+  @media only screen and (min-width: $ipad-p-min-w) and (max-height: $ipad-p-max-h) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+	main.main {
+	  background-position: 28rem 0rem;
+	  background-size: 35rem 8rem;
+	}
+  }
+  /* Large screens ----------- */
+  @media (min-width: $display-1080-min-w) {
+	.personal-data__images {
+	  max-width: calc(100% - 27rem);
+	}
+  
+	.personal-skills__list {
+	  text-align: center;
+	  font-size: 30px;
+	}
+  
+	main.main {
+	  background-position: 64rem 0rem;
+	  background-size: 42rem 8rem;
+	}
+  
+	img.professional-skill__images {
+	  width: 30%;
+	  padding-left: 3rem;
+	}
+  }
+  /*iPads*/
+  @media only screen and (min-width: $ipad-p-min-w) and (max-width: $ipad-p-max-h) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	.main {
+	  background-position: 18rem 0rem;
+	  background-size: 32rem 7rem;
+	}
+  }
